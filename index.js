@@ -1,6 +1,7 @@
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
     var buttonInnerHTML = this.innerHTML;
+    makeSound(this.innerHTML);
   });
 }
 document.addEventListener("keydown", function(event) {
